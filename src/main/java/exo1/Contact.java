@@ -11,7 +11,7 @@ public class Contact implements ContactService {
     public Contact(String nom, String numero) {
         this.nom = nom;
         this.numero = numero;
-        lesContacts.add(this);
+        //lesContacts.add(this);
     }
 
     public String getNom() {
