@@ -11,7 +11,6 @@ public class Contact implements ContactService {
     public Contact(String nom, String numero) {
         this.nom = nom;
         this.numero = numero;
-        //lesContacts.add(this);
     }
 
     public String getNom() {
@@ -23,8 +22,9 @@ public class Contact implements ContactService {
     }
 
     public String getInfoContact() {
-        return "Nom: " + getNom() + ", Numéro: " + getNumero();
+        return toString();
     }
+
 
     public void ajouteContact(Contact contact) {
         lesContacts.add(contact);
